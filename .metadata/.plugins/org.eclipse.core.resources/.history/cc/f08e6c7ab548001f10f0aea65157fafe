@@ -1,0 +1,20 @@
+package Machinetest;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Shcollege {
+
+	public static void main(String[] args) {
+		System.setProperty("WebDriver.chrome.driver","C:\\Users\\joyal\\OneDrive\\Desktop\\joyal\\chromedriver.exe" );
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://demo.shcollege.online/login");
+		driver.findElement(By.id("UserName")).sendKeys("joyal");
+		driver.findElement(By.id("Password")).sendKeys("aaaa");
+		driver.findElement(By.xpath("//*[@id=\"frmLogin\"]/div[4]/button")).click();
+		
+
+	}
+
+}
